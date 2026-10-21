@@ -44,4 +44,20 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 10px;
+}.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    margin-top: 20%;
+    font-size: 20px;
+
+}
+#about{
+    padding: 80px 0;
+    color:#ababab
+}
+.row{
+    display: flex;
+    justify-content: space-between;
 }
