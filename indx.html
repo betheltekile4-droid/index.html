@@ -1,43 +1,160 @@
-<!DOCTYPE html>
-<html lang="ehttps://github.com/betheltekile4-droid/index.html.gitn">
+ <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal portfolio website </title>
-  <link rel="stylesheet" href="indx.css">
+    <meta name="description" content="Personal portfolio of a third-year Software Engineering student and Web Developer.">
+    <title>My Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="indx.css">
 </head>
 <body>
-    <div id="header">
-    <div class="container">
-      <nav  >
-        <ul class="logo">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-        
-      </nav>
-      <div class="header-text">
-        <h1>Hi i am bethel from wolayta soddo</h1>
 
-      </div>
-    </div>
-    </div>
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about1">
-            <img src="photo_2025-12-23_22-01-23.jpg" alt="">
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MyPortfolio</h2>
 
-          </div>
-<div class="about2">
-  <h1>About me</h1>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-</div>
+            <button class="menu-btn" id="menuBtn"
+                aria-label="Open navigation" aria-expanded="false">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="welcome">Hello, welcome to my portfolio!</p>
+
+            <h1>I'm a <span>Web Developer</span></h1>
+
+            <h3>Third-Year Software Engineering Student</h3>
+
+            <p>
+                I am passionate about designing and developing
+                modern websites. I enjoy solving problems,
+                learning new technologies, and building useful
+                digital experiences.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
         </div>
-      </div>
-      
-    </div>
+
+        <div class="hero-image">
+            <img
+                src="photo_2025-12-23_22-01-23.jpg"
+                alt="Placeholder for my profile photo">
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+            <p>
+                I am a third-year Software Engineering student
+                interested in frontend and full-stack web development.
+                I have been developing my skills through academic
+                learning and personal projects.
+            </p>
+
+            <p>
+                My goal is to become a professional software developer
+                who creates responsive, accessible, and reliable
+                applications that solve real-world problems.
+            </p>
+
+            <p><strong>Education:</strong> BSc in Software Engineering — Third Year</p>
+            <p><strong>Career Goal:</strong> Professional Web Developer</p>
+        </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive personal website that introduces
+                    my background, technical skills, and projects.
+                </p>
+                <p class="technology">HTML | CSS | JavaScript</p>
+                <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+
+            <div class="project-card">
+                <h3>HandCraft Store</h3>
+[10/27/2026 12:06 AM] Bethi tekile: <p>
+                    An online storefront concept for handmade products,
+                    with product cards and shopping cart interactions.
+                </p>
+                <p class="technology">HTML | CSS | JavaScript</p>
+                <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator App</h3>
+                <p>
+                    A simple, responsive calculator that performs
+                    basic arithmetic operations.
+                </p>
+                <p class="technology">HTML | CSS | JavaScript</p>
+                <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>
+            I am interested in web development, learning opportunities,
+            and collaborating on useful projects.
+        </p>
+
+        <p>Email:
+            <a href="betheltekile4@email.com">your@email.com</a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/" target="_blank"
+               rel="noopener noreferrer">My GitHub Profile</a>
+        </p>
+
+        <p>Location: Ethiopia</p>
+    </section>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span> My Portfolio.
+            Built with HTML, CSS, and JavaScript.
+        </p>
+    </footer>
+
+    <script src="indx.js"></script>
 </body>
-</html> 
+</html>
