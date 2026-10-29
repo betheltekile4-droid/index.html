@@ -226,7 +226,35 @@ header {
 
 .contact-section p {
     margin: 12px 0;
+}.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
 }
+
+.social-icons a {
+    font-size: 35px;
+    color: #2563eb;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a:nth-child(1) {
+    color: #E1306C;
+}
+
+.social-icons a:nth-child(2) {
+    color: #0A66C2;
+}
+
+.social-icons a:nth-child(3) {
+    color: #24292e;
+}
+
 
 footer {
     background: #172554;
