@@ -115,7 +115,7 @@ header {
     margin: 5px 8px 5px 0;
     background: #2563eb;
     color: white;
-    text-decoration: none;
+    text-decoration:none;
     border-radius: 6px;
     transition: 0.3s;
 }
@@ -283,7 +283,7 @@ footer {
     .menu-btn {
         display: block;
     }
-[10/27/2026 12:11 AM] Bethi tekile: .nav-links {
+ .nav-links {
         display: none;
         position: absolute;
         top: 65px;
