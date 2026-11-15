@@ -1,28 +1,27 @@
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+document.addEventListener('DOMContentLoaded', () => {
+    // Mobile Menu Toggle functionality
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
 
-// Mobile navigation menu
-menuBtn.addEventListener("click", function () {
-    const isOpen = navLinks.classList.toggle("open");
+    if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !expanded);
+        });
 
-    menuBtn.textContent = isOpen ? "✕" : "☰";
-    menuBtn.setAttribute("aria-expanded", isOpen);
-    menuBtn.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation" : "Open navigation"
-    );
+        // Close mobile navigation menu when any link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
+    // Automatically update current year in the footer copyright notice
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
-
-// Close the menu after selecting a section
-document.querySelectorAll(".nav-links a").forEach(function (link) {
-    link.addEventListener("click", function () {
-        navLinks.classList.remove("open");
-        menuBtn.textContent = "☰";
-        menuBtn.setAttribute("aria-expanded", "false");
-        menuBtn.setAttribute("aria-label", "Open navigation");
-    });
-});
-
-// Automatically display the current year
-document.getElementById("year").textContent =
-    new Date().getFullYear();
