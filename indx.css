@@ -153,14 +153,17 @@ header {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+/* Updated Hero Image to Circular */
 .hero-image img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 1rem;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* General Section Styling */
@@ -264,6 +267,13 @@ header {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+/* Specific Fix for Certificates Section Images so they aren't cropped */
+#certificates .project-thumb {
+    object-fit: contain;
+    background-color: #0b1120;
+    padding: 8px;
 }
 
 .project-info {
@@ -390,6 +400,7 @@ footer {
     }
 
     .hero-image img {
-        max-width: 100%;
+        width: 260px;
+        height: 260px;
     }
 }
