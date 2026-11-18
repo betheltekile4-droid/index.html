@@ -156,7 +156,7 @@ header {
     align-items: center;
 }
 
-/* Updated Hero Image to Circular */
+/* Hero Image to Circular */
 .hero-image img {
     width: 320px;
     height: 320px;
@@ -269,7 +269,7 @@ header {
     object-fit: cover;
 }
 
-/* Specific Fix for Certificates Section Images so they aren't cropped */
+/* Specific Fix for Certificates Section Images */
 #certificates .project-thumb {
     object-fit: contain;
     background-color: #0b1120;
@@ -344,11 +344,33 @@ header {
     transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+/* Ensure icons turn white on hover */
+.social-icons a:hover i {
+    color: #ffffff;
+}
+
+/* Authentic Instagram Gradient Hover Effect */
+.social-icons a:has(.fa-instagram):hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #df4996 45%, #a237b0 60%, #5163ba 90%);
+    border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 10px 15px -3px var(--accent-glow);
+    box-shadow: 0 10px 15px -3px rgba(223, 73, 150, 0.4);
+}
+
+/* Official LinkedIn Blue Hover Effect */
+.social-icons a:has(.fa-linkedin):hover {
+    background-color: #0a66c2;
+    border-color: #0a66c2;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(10, 102, 194, 0.4);
+}
+
+/* Official GitHub Dark Hover Effect */
+.social-icons a:has(.fa-github):hover {
+    background-color: #24292e;
+    border-color: #24292e;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(36, 41, 46, 0.4);
 }
 
 /* Footer */
